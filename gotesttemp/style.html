@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go test Series</title>
+</head>
+<style>
+    body
+
+{
+
+    margin:0px;
+
+    padding:0px;
+
+    background: orange;
+
+    font-family: sans-serif;
+
+}
+
+.container
+
+{
+
+    width:1200px;
+
+    margin: 70px auto 0;
+
+    display: flex;
+
+    flex-direction: row;
+
+    flex-wrap:wrap;
+
+}
+
+.container .box
+
+{
+
+    position: relative;
+
+    border-radius: 10px 10px;
+
+    width:250px;
+
+    height:250px;
+
+    background: #ff0;
+
+    margin:10px;
+
+    box-sizing:border-box;
+
+    display: inline-block;
+
+}  
+
+.container .box .imgbox
+
+{
+
+    position: absolute;
+
+    overflow: hidden;
+
+    border-radius: 10px 10px;
+
+
+
+}
+
+.container .box .imgbox h4
+
+{
+
+    margin:0px;
+
+    padding:5px;
+
+    color:blue;
+
+}
+
+.container .box .imgbox img
+
+{
+
+    max-width: 100%;
+
+    border-radius: 10px 10px;
+
+    transition: transform 2%;
+
+
+
+}
+
+.container .box:hover  .imgbox img 
+
+{
+
+    transform:scale(1.2);
+
+}
+
+.container .box .details
+
+{
+
+    position: absolute;
+
+    text-align: center;
+
+    top:10px;
+
+    left: 10px;
+
+    right: 10px;
+
+    bottom: 10px;
+
+    background:#3d3c3b;
+
+    transform: scaleY(0);
+
+    transition: transform .5s;
+
+    border-radius: 10px 10px;
+
+    border:2px solid blue;
+
+
+
+}
+
+.container .box:hover .details
+
+{
+
+    transform: scaleZ(1);
+
+}
+
+.container .box .details .content
+
+{
+
+    position: absolute;
+
+    top:50%;
+
+    transform: translateY(-50%);
+
+    text-align: center;
+
+    padding:15px;
+
+    color:#fff; 
+
+}
+
+.container .box .details .content h2
+
+{
+
+    margin:0px;
+
+    padding:0px;
+
+    font-size: 20px;
+
+    color:#ff0;
+
+}
+
+.container .box .details .content p
+
+{
+
+    margin:10px 0 0;
+
+    padding:0px;
+
+}
+
+.container .box .details .content a
+
+{
+
+    text-decoration: none;
+
+    color:white;
+
+    font-size: 18px;
+
+    border:2px solid white;
+
+    background-color:rgb(53, 92, 53);
+
+    border-radius: 10px 10px;
+
+    padding:5px;
+
+}
+
+</style>
+<body>
+  {% block content %}
+  
+
+  {% endblock %}
+    
+</body>
+</html>
